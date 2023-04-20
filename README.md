@@ -3,7 +3,9 @@
 
 O SGNE é um sistema web para as escolas poderem gerenciar as notas dos alunos e disponibiliza-las de forma mais eficiente e econômica.
 
-![Group 49](https://user-images.githubusercontent.com/83729891/229171063-e57a043e-460e-4efb-a414-a386f6a0327e.png)
+![Group 88](https://user-images.githubusercontent.com/83729891/233362362-5c2ff985-268e-48d9-a726-8a18c7c12970.png)
+
+
 
 
 ## Kanban Board
@@ -45,6 +47,8 @@ O projeto foi dividido em 4 áreas:
 
 ### 2 - Prototipagem
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Group 49](https://user-images.githubusercontent.com/83729891/229171063-e57a043e-460e-4efb-a414-a386f6a0327e.png)
+[Clique aqui para acessar o protótipo no figma](https://www.figma.com/file/7g2TbAUnB4PahhguVzoeuL/raphael-brusque?node-id=0%3A1&t=eHSa6f6V6moxV39v-1)
 
 
 ### 3 - Desenvolvimento do Backend
