@@ -1,9 +1,24 @@
 .sidebar{
-    background-color: vAR(--c-zinc-100);
+    background-color: var(--c-zinc-100);
 
     padding: 1rem;
-    width: 15rem;
+    width: 14rem;
     height: calc(100% - 2.5rem);
+
+    position: fixed;
+    left: 0rem;
+
+    /* z-index: 10; */
+    transition: all .5s ease-in-out;
+}
+.sidebar.hidden{
+    left: -20rem;
+
+}
+.sidebar.hidden .sidebar-header button{
+    transform: translateX(7rem);
+    background-color: var(--c-blue-500);
+    color: var(--c-white);
 }
 
 .sidebar-header{
@@ -17,8 +32,24 @@
     /* color: #3f3f46; */
 }
 
+.sidebar-header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    color: var(--c-blue-500);
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-radius: .25rem;
+
+    transform: rotate(180deg);
+
+    transition: all .8s ease;
+}
 .sidebar-description{
-    font-size: var(--f-s-normal);
+    margin-top: .25rem;
+    font-size: var(--f-s-small);
     color: var(--c-zinc-400);
 }
 

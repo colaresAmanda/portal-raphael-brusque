@@ -1,4 +1,6 @@
 .configuracoes-section{
     height: calc(100vh - 2.5em);
     margin-top: 2.5rem;
+
+    position: relative;
 }
