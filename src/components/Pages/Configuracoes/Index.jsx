@@ -5,7 +5,7 @@ import './configuracoes.css'
 import Sidebar from './Sidebar/Index.jsx'
 
 function Index() {
-  const SIDEBARDEFAULTOPTIONS  = {
+  const SIDEBARDEFAULT  = {
     "Estrutura da Escola": {
       Cursos: true,
       Turmas: false,
@@ -19,14 +19,14 @@ function Index() {
       Perfil: false,
     },
   }
-  const [sidebarOptionsStatus, setSidebarOptionsStatus] = useState(SIDEBARDEFAULTOPTIONS)
+  const [sidebarStatus, setSidebarStatus] = useState(SIDEBARDEFAULT)
 
 
 
 
   return (
     <section className='section configuracoes-section'>
-        <Sidebar sidebarOptionsStatus={sidebarOptionsStatus} setSidebarOptionsStatus={setSidebarOptionsStatus} DEFAULTOPTIONS={SIDEBARDEFAULTOPTIONS}/>
+        <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus} DEFAULTOPTIONS={SIDEBARDEFAULT}/>
 
 
         <div className="content">

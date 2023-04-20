@@ -16,7 +16,7 @@
 
 }
 .sidebar.hidden .sidebar-header button{
-    transform: translateX(7rem);
+    transform: translateX(7.5rem);
     background-color: var(--c-blue-500);
     color: var(--c-white);
 }

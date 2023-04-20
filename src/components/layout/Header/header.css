@@ -16,13 +16,14 @@ header {
     background-color: white;
 
     position: fixed;
-    top: .25rem;
+    top: 0rem;
     z-index: 999;
 }
 
-.navbar a{
+.navbar a {
     color: var(--c-blue-900);
 }
+
 .nav-header {
     width: 100%;
     display: flex;
@@ -148,6 +149,9 @@ header {
         align-items: inherit;
         justify-content: inherit;
 
+        width: inherit;
+
+
         height: inherit;
         background-color: inherit;
 
@@ -157,7 +161,7 @@ header {
 
         position: static;
     }
-   
+
     .nav-header {
         width: inherit;
         display: inherit;
@@ -286,13 +290,13 @@ header {
         justify-content: space-between;
 
         background-color: var(--c-white);
-        padding: .15rem 1rem;
+        padding: .15rem .5rem;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
         height: 2.5rem;
     }
 
-    .navbar a{
+    .navbar a {
         color: var(--c-blue-900);
     }
 
@@ -326,17 +330,20 @@ header {
         height: 100%;
 
     }
+
     .navbar .menu-item:hover {
-        
+
         color: var(--c-blue-500);
 
 
     }
+
     .navbar .menu-item:last-child {
         color: var(--c-zinc-400);
 
 
     }
+
     .navbar .menu-item:last-child:hover {
         color: var(--c-rose-600);
         cursor: pointer;
@@ -397,7 +404,7 @@ header {
     .navbar .submenu .submenu-item:hover a {
         color: var(--c-white);
         background-color: vaR(--c-blue-500);
-        border-radius: .25rem;  
+        border-radius: .25rem;
 
     }
 }
