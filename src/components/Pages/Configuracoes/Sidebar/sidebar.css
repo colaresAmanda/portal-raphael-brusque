@@ -53,3 +53,9 @@
     cursor: pointer;
     color: var(--c-blue-500);
 }
+
+.sidebar-menu .menu-options button.selected{
+    color: var(--c-blue-500);
+    
+}
+
