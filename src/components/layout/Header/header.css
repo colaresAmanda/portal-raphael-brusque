@@ -1,0 +1,404 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 2.5rem;
+    background-color: white;
+
+    position: relative;
+    top: .25rem;
+    z-index: 999;
+
+}
+
+.navbar a{
+    color: var(--c-blue-900);
+}
+.nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 999;
+    background-color: var(--c-white);
+
+    padding: .5rem 1rem;
+}
+
+.nav-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-header .menu-icon {
+    color: var(--c-blue-600);
+}
+
+.nav-header .logo {
+    width: 8rem;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--c-white);
+    top: 2.5rem;
+    left: 0;
+    width: calc(100% - 2rem);
+    list-style: none;
+
+    transition: all .40s ease-in;
+
+    z-index: 997;
+
+    padding: .5rem 1rem 1rem 1rem;
+
+}
+
+.navbar .menu.hidden {
+    top: -20rem;
+}
+
+.navbar .menu-item {
+    font-size: var(--f-s-normal);
+    color: var(--c-blue-500);
+    padding: .5rem 0;
+
+}
+
+.navbar .menu-item a {
+    text-decoration: none;
+    color: var(--c-zinc-500);
+    display: flex;
+}
+
+.navbar .menu-item.selected,
+.navbar .menu-item.selected a {
+    color: var(--c-blue-500);
+}
+
+.navbar .menu-item:hover {
+    color: var(--c-blue-500);
+}
+
+.navbar .menu-item:hover a {
+    color: var(--c-blue-500);
+}
+
+.navbar .submenu {
+
+    list-style: none;
+    display: none;
+    margin-top: .25rem;
+
+}
+
+.navbar .menu-item.selected .submenu {
+    display: inherit;
+
+}
+
+.navbar .submenu .submenu-item {
+    margin-bottom: .5rem;
+    background-color: var(--c-blue-500);
+
+    border-radius: .25rem;
+}
+
+.navbar .submenu .submenu-item a {
+    color: var(--c-zinc-300);
+    padding: .75rem 1rem;
+}
+
+.navbar .submenu .submenu-item.selected a,
+.navbar .submenu .submenu-item:hover a {
+    color: var(--c-white);
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    /* REMOVE ALL CSS FROM MENU */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+
+    .navbar {
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+
+        height: inherit;
+        background-color: inherit;
+
+        position: inherit;
+        top: inherit;
+        z-index: inherit;
+
+        position: static;
+    }
+   
+    .nav-header {
+        width: inherit;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+
+        position: inherit;
+        z-index: inherit;
+        background-color: inherit;
+
+        padding: inherit;
+    }
+
+    .nav-header a {
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+
+    .nav-header .menu-icon {
+        color: inherit;
+    }
+
+    .nav-header .logo {
+        width: inherit;
+    }
+
+    .navbar .menu {
+        display: inherit;
+        flex-direction: inherit;
+        position: inherit;
+        background-color: inherit;
+        top: inherit;
+        left: inherit;
+        width: inherit;
+        list-style: inherit;
+
+        transition: inherit;
+
+        z-index: inherit;
+
+        padding: inherit;
+
+    }
+
+    .navbar .menu.hidden {
+        top: inherit;
+    }
+
+    .navbar .menu-item {
+        font-size: inherit;
+        color: inherit;
+        padding: inherit;
+
+    }
+
+    .navbar .menu-item a {
+        text-decoration: inherit;
+        color: inherit;
+        display: inherit;
+    }
+
+    .navbar .menu-item.selected {
+        color: inherit;
+    }
+
+    .navbar .menu-item:hover {
+        color: inherit;
+    }
+
+    .navbar .menu-item:hover a {
+        color: inherit;
+    }
+
+    .navbar .submenu {
+
+        list-style: inherit;
+        display: inherit;
+        margin-top: inherit;
+
+
+    }
+
+    .navbar .menu-item.selected .submenu {
+        display: inherit;
+
+    }
+
+    .navbar .submenu .submenu-item {
+        margin-bottom: inherit;
+        background-color: inherit;
+
+        border-radius: inherit;
+    }
+
+    .navbar .submenu .submenu-item a {
+        color: inherit;
+        padding: inherit;
+    }
+
+    .navbar .submenu .submenu-item.selected a,
+    .navbar .submenu .submenu-item:hover a {
+        color: inherit;
+
+    }
+
+
+    /* =========== MENU CSS ============ */
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+
+    .navbar {
+
+        position: static;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: var(--c-white);
+        padding: .15rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+        height: 2.5rem;
+    }
+
+    .navbar a{
+        color: var(--c-blue-900);
+    }
+
+
+    .nav-header .menu-icon {
+        display: none;
+    }
+
+    .nav-header .logo {
+        width: 8rem;
+    }
+
+    .navbar .menu {
+        height: 100%;
+        position: static;
+
+        list-style: none;
+
+        gap: .25rem;
+
+    }
+
+    .navbar .menu-item {
+        cursor: default;
+        display: flex;
+        align-items: center;
+
+        font-size: var(--f-s-normal);
+        color: var(--c-zinc-400);
+
+        height: 100%;
+
+    }
+    .navbar .menu-item:hover {
+        
+        color: var(--c-blue-500);
+
+
+    }
+    .navbar .menu-item:last-child {
+        color: var(--c-zinc-400);
+
+
+    }
+    .navbar .menu-item:last-child:hover {
+        color: var(--c-rose-600);
+        cursor: pointer;
+    }
+
+
+    .navbar .menu-item a {
+        display: flex;
+        align-items: center;
+        color: var(--c-zinc-400);
+        font-weight: var(--f-medium);
+
+
+    }
+
+
+
+    .navbar .submenu {
+        position: absolute;
+        top: 2.30rem;
+
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+        background-color: vaR(--c-blue-600);
+
+        transform: translateX(-.5rem);
+
+        border-radius: 0 0 .25rem .25rem;
+        display: none;
+
+    }
+
+    .navbar .menu-item.selected .submenu {
+        display: none;
+    }
+
+    .navbar .menu-item.selected:hover .submenu,
+    .navbar .menu-item:hover .submenu {
+        display: inherit;
+    }
+
+    .navbar .submenu .submenu-item {
+        padding: .5rem;
+
+    }
+
+    .navbar .submenu .submenu-item a {
+
+        color: var(--c-zinc-300);
+        font-weight: var(--f-medium);
+
+
+    }
+
+    .navbar .submenu .submenu-item.selected a,
+    .navbar .submenu .submenu-item:hover a {
+        color: var(--c-white);
+        background-color: vaR(--c-blue-500);
+        border-radius: .25rem;  
+
+    }
+}

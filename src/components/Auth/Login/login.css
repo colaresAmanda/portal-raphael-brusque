@@ -1,0 +1,134 @@
+.section{
+    height: 100vh;
+}
+
+.login-section{
+    /* height: 100vh; */
+    background-color: var(--c-white);
+}
+.login-content{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+.right{
+    height: 25rem;
+    background-color: red;
+    background: url("https://cdn.dribbble.com/users/464226/screenshots/18104625/media/0a202079ee07752c95691197b3be503d.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 80%;
+}
+
+
+.left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    padding : 2rem 1.5rem 2rem 1.5rem;
+}
+.left .header{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.left .header .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left .header .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.left .form-control.user-utils{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.remember-me label{
+    cursor: pointer;
+
+}
+
+.login-section .remember-me input:hover{
+    cursor: pointer;
+}
+
+
+.login-section .remember-me input[type="checkbox"]{
+    margin-right: .25rem;
+}
+
+.user-utils .link{
+    color: var(--c-blue-500);
+}
+.user-utils .link:hover{
+    color: var(--c-blue-600);
+}
+
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* -------------- TABLET ------------ */
+@media only screen and (min-width: 600px) {
+    .left{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    
+        padding : 2rem 5rem 2rem 5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .login-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .left{
+        width: 50%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    
+        padding: 0rem 5rem 0rem 5rem;
+    }
+
+    .right{
+        display: flex;
+
+        height: 100%;
+        width: 70%;
+
+
+        background-color: red;
+        background: url("https://cdn.dribbble.com/users/464226/screenshots/18104625/media/0a202079ee07752c95691197b3be503d.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: 10% 80%;
+    }
+    
+}

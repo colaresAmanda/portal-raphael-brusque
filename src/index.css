@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* list-style: none; */
+}
+
+:root {
+  --c-blue-900: #010D26;
+  --c-blue-800: #0E45B3;
+  --c-blue-500: #056CF2;
+  --c-blue-600: #135EF2;
+  --c-blue-700: #0644BF;
+  --c-blue-900: #1e3a8a;
+
+  --c-rose-600: #e11d48;
+  --c-emerald-600: #059669;
+
+  --c-white: #fff;
+
+  --c-zinc-50: #fafafa;
+  --c-zinc-100: #f4f4f5;
+  /* --c-zinc-200: #e4e4e7; */
+  --c-zinc-300: #e4e4e7;
+  --c-zinc-400: #A1A1AA;
+  --c-zinc-500: #71717a;
+  --c-zinc-800: #27272a;
+  --c-zinc-900: #18181b;
+/* 
+  --c-neural-100: #F5F5F5;
+  --c-neural-500: #737373; */
+
+  --f-light: 300;
+  --f-regular: 400;
+  --f-medium: 500;
+  --f-semibold: 600;
+  --f-bold: 700;
+
+  --f-s-h1: 1.5rem;
+  --f-s-h2: 1.25rem;
+  --f-s-h3: 1.05rem;
+
+  --f-s-normal: 0.875rem;
+  --f-s-small: 0.75rem;
+  --f-s-smaller: 0.625rem;
+  --t-default: all .5s;
+}
+
+body {
+  margin: 0;
+  font-family:  'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: 'Quicksand', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  width: 100%;
+}
+
+
+.title {
+  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--c-blue-900);
+  font-weight: var(--f-bold);
+}
+
+
+.text {
+  font-size: 0.875rem;
+  color: var(--c-blue-900);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+}
+
+.form-control label{
+  font-size: var(--f-s-normal);
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="password"] {
+  height: 2.25rem;
+
+  font-size: 1rem;
+  padding: 0 1rem;
+
+  border-radius: .25rem;
+
+  margin-top: .25rem;
+  background-color: var(--c-zinc-100);
+}
+
+.form-control input[type="submit"] {
+  width: 100%;
+}
+
+.form-control input[type="text"]:focus,
+.form-control input[type="email"]:focus,
+.form-control input[type="password"]:focus {
+  outline-color: var(--c-blue-500);
+
+  color: var(--c-blue-500);
+}
+
+.form-control input[type="checkbox"]{
+  accent-color: var(--c-blue-500);
+}
+
+.button{
+  /* background-color: var(--c-blue-500); */
+  height: 3rem;
+  border-radius: .5rem;
+
+  font-size: 1rem;
+  /* color: var(--c-white); */
+  cursor: pointer;
+}
+
+.button:hover{
+  /* background-color: var(--c-blue-600); */
+
+}
+
+.primary-button{
+  
+  height: 3rem;
+  border-radius: .5rem;
+
+  font-size: 1rem;
+  color: var(--c-white);
+  cursor: pointer;
+  background: linear-gradient(to left,var(--c-blue-500) 50%, var(--c-blue-600) 50%) right;
+  background-position: right;
+
+  background-size: 200% 100%;
+  
+  transition: var(--t-default);
+
+}
+.primary-button:hover{
+  
+  background: linear-gradient(to right, var(--c-blue-600) 50%, var(--c-blue-500) 50%) left;
+  background-size: 200% 100%;
+ 
+}
+
+.secondary-button{
+  border: var(--c-blue-500) 1px solid;
+  height: 3rem;
+  border-radius: .5rem;
+
+  font-size: 1rem;
+  color: var(--c-blue-500);
+  background-color: transparent;
+  background-position: right;
+  background: linear-gradient(to left, transparent 50%, var(--c-blue-500) 50%) right;
+  background-size: 200% 100%;
+
+
+  transition: var(--t-default);
+
+}
+.secondary-button:hover{
+  background-color: transparent;
+  background: linear-gradient(to right,var(--c-blue-500) 50%, transparent 50%) left;
+  background-position: left;
+
+  background-size: 200% 100%;
+  border: var(--c-blue-600) 2px solid;
+ 
+  color: var(--c-white);
+}
+
+.link{
+  color: var(--c-blue-500);
+  text-decoration: none;
+}
+.link:hover{
+  color: var(--c-blue-600);
+  text-decoration: underline;
+
+}
+
+
+.section{
+  background-color: var(--c-zinc-50);
+}

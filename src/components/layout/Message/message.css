@@ -1,0 +1,38 @@
+.message{
+    position: fixed;
+    min-width: 13rem;
+    margin-top: 2rem;
+
+    padding: 1rem;
+
+    border-radius: .5rem 0 0 .5rem;
+
+    z-index: 999;
+
+    animation: MoveRightLeft .2s ease-in-out;
+    right: 0;
+
+    font-weight: var(--f-medium);
+}
+.message:hover{
+    cursor: pointer;
+}
+
+@keyframes MoveRightLeft {
+    0%{
+        right: -15rem;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+.message.error{
+    background-color: var(--c-rose-600);
+    color: var(--c-white);
+}
+
+.message.sucess{
+    background-color: var(--c-emerald-600);
+    color: var(--c-white);
+}
