@@ -18,16 +18,19 @@ O SGNE é um sistema web para as escolas poderem gerenciar as notas dos alunos e
 - Design tela de login
 - Design tela "Recuperar senha"
 - Design tela de início
+- Design tela de "Configuraç"
 
 
 :yellow_square: Em andamento
-- Criar Header responsivo
+- Desenvolver tela de "Configurações"
 
 :green_square: Finalizado
 - Criar página de login
 - Criar função "Recuperar senha"
 
 - Design tela "cadastrar funcionário"
+
+- Criar Header responsivo
 
 
 
