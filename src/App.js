@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import { UserProvider } from './contexts/UserContext'
-
 // components
 import Header from './components/layout/Header/Header.jsx';
 import Message from './components/layout/Message/Message.jsx';
@@ -15,27 +13,15 @@ import CadastroFuncionario from './components/Pages/Funcionario/Cadastro.jsx';
 import Configuracoes from './components/Pages/Configuracoes/Index.jsx';
 
 
-const ORIGIN = `${window.location.protocol}//${window.location.host}`
-const HREF = window.location.href
 
 function App() {
-  const [header, setHeader] = useState(true)
-
-  function checkLocation() {
-    if (HREF === `${ORIGIN}/login` || HREF === `${ORIGIN}/login/esqueceu-senha`) setHeader(false)
-    else setHeader(true)
-  }
-
-  useEffect(() => {
-    checkLocation()
-  }, [])
-  
   return (
     <>
       <Router>
-        {header && <Header />}
 
         <UserProvider>
+          <Header />
+
           <main className="main">
             <Message />
             <Routes>

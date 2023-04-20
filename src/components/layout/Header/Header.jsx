@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { FiMenu, FiX } from "react-icons/fi"
+
+import {Context} from '../../../contexts/UserContext'
 
 //assets
 import "./header.css"
@@ -9,7 +11,9 @@ import Logo from "../../../assets/img/header-logo.svg"
 // components
 import Menu from "./Menu"
 
+
 function Header() {
+  const {authenticated} = useContext(Context)
   const [menuIsOpen, setMenuIsOpen] = useState(false)
   const { pathname } = useLocation()
 
@@ -22,7 +26,7 @@ function Header() {
   }
 
   return (
-    <header>
+    <header className={authenticated ? "" : "hidden"}>
       <div className="navbar">
 
         <div className="nav-header">

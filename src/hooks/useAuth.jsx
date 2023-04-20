@@ -90,7 +90,21 @@ export default function useAuth() {
 
     navigate("/")
   }
+
+  function logout() {
+    const msgText = "Logout realizado com sucesso!"
+    const msgType = "sucess"
+
+    setAuthenticated(false)
+    localStorage.removeItem('token')
+    sessionStorage.removeItem('token')
+    api.defaults.headers.Authorization = undefined
+    navigate("/login")
+
+    setFlashMessage(msgText, msgType)
+  }
   return {
+    logout,
     authenticated,
     loading,
     login,
