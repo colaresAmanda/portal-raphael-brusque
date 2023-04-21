@@ -63,6 +63,7 @@ function Sidebar({ sidebarStatus, setSidebarStatus, DEFAULTOPTIONS }) {
           options={["Cursos", "Turmas", "Disciplinas"]}
           sidebarStatus={sidebarStatus}
           selectOption={SelectOption}
+          setIsSidebarOpen={setIsSidebarOpen}
         />
 
         <SidebarOptions
@@ -70,6 +71,7 @@ function Sidebar({ sidebarStatus, setSidebarStatus, DEFAULTOPTIONS }) {
           options={["Alunos", "Funcionários"]}
           sidebarStatus={sidebarStatus}
           selectOption={SelectOption}
+          setIsSidebarOpen={setIsSidebarOpen}
         />
 
         <SidebarOptions
@@ -77,6 +79,7 @@ function Sidebar({ sidebarStatus, setSidebarStatus, DEFAULTOPTIONS }) {
           options={["Perfil"]}
           sidebarStatus={sidebarStatus}
           selectOption={SelectOption}
+          setIsSidebarOpen={setIsSidebarOpen}
         />
       </div>
     </div>

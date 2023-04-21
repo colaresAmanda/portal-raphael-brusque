@@ -32,7 +32,7 @@ function Configuracoes() {
 
       {sidebarStatus["Estrutura da Escola"].Cursos && <Content title="Cursos"/>}
       {sidebarStatus["Estrutura da Escola"].Turmas && <Content title="Turmas"/>}
-      {sidebarStatus["Estrutura da Escola"].Disciplinas && <Content title="Disciplinas"/>}
+      {sidebarStatus["Estrutura da Escola"].Disciplinas && <Content title="Cursos"/>}
     </section>
   )
 }
