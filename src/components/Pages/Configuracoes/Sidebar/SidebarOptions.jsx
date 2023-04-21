@@ -7,9 +7,6 @@ function SidebarOptions({
   selectOption,
   setIsSidebarOpen
 }) {
-  function onClick(subtitle, index){
-    
-  }
   // The component returns a fragment (<> </>) which contains an h3 element with a class name of "sidebar-subtitle"
   // The h3 displays the "subtitle" prop passed to the component
   // Below that, there is a div with a class name of "menu-options"
