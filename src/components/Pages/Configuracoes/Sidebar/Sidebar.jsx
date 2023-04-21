@@ -9,7 +9,7 @@ import { RiArrowRightSLine } from "react-icons/ri"
 import SidebarOptions from "./SidebarOptions.jsx"
 
 // Functional component that receives sidebarStatus, setSidebarStatus, and DEFAULTOPTIONS props
-function Index({ sidebarStatus, setSidebarStatus, DEFAULTOPTIONS }) {
+function Sidebar({ sidebarStatus, setSidebarStatus, DEFAULTOPTIONS }) {
 
   // Setting isSidebarOpen state variable to false by default
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -84,4 +84,4 @@ function Index({ sidebarStatus, setSidebarStatus, DEFAULTOPTIONS }) {
 }
 
 // Exporting the component as the default export
-export default Index
+export default Sidebar

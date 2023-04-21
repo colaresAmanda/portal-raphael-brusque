@@ -10,7 +10,7 @@ import Login from './components/Auth/Login/Login.jsx'
 import ForgotPassword from './components/Auth/ForgotPassword/ForgotPassword.jsx';
 import Dashboard from './components/Pages/Dashboard';
 import CadastroFuncionario from './components/Pages/Funcionario/Cadastro.jsx';
-import Configuracoes from './components/Pages/Configuracoes/Index.jsx';
+import Configuracoes from './components/Pages/Configuracoes/Configuracoes';
 
 
 
