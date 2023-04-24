@@ -13,6 +13,7 @@ function Dashboard() {
   useEffect(() => {
     if (!authenticated) navigate("/login")
   }, [authenticated, navigate])
+  
   return (
     <section className="section dashboard-section">
       <h1>Dashboad</h1>

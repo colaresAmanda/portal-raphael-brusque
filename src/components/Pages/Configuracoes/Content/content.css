@@ -1,0 +1,35 @@
+.configuracoes .title{
+    color: var(--c-zinc-800);
+    margin-left: 2rem;
+}
+
+.configuracoes{
+    /* background-color: red; */
+
+    padding: .75rem 1rem;
+    border-radius: 1rem;
+}
+
+.configuracoes .container{
+    background-color: var(--c-white);
+}
+.configuracoes .container .header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border-bottom: .25px solid var(--c-zinc-100);
+    margin: 0 1rem;
+    /* height: 2rem; */
+}
+.configuracoes-content .container .header button{
+    background-color: transparent;
+    color: var(--c-zinc-400);
+
+    /* background-color: blue;  */
+    padding: .5rem 0;
+
+}
+.configuracoes-content .container .header button:hover{
+    color: var(--c-blue-500);
+}

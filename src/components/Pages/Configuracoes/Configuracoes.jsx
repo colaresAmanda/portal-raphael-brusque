@@ -3,8 +3,9 @@ import React, { useState } from "react"
 import "./configuracoes.css"
 // Pages
 import Sidebar from "./Sidebar/Sidebar.jsx"
-import Content from "./Content"
+// import Content from "./Content/Content"
 
+import Cursos from "./Content/Cursos/Cursos"
 function Configuracoes() {
   const SIDEBARDEFAULT = {
     "Estrutura da Escola": {
@@ -30,9 +31,7 @@ function Configuracoes() {
         DEFAULTOPTIONS={SIDEBARDEFAULT}
       />
 
-      {sidebarStatus["Estrutura da Escola"].Cursos && <Content title="Cursos"/>}
-      {sidebarStatus["Estrutura da Escola"].Turmas && <Content title="Turmas"/>}
-      {sidebarStatus["Estrutura da Escola"].Disciplinas && <Content title="Cursos"/>}
+      {sidebarStatus["Estrutura da Escola"].Cursos && <Cursos />}
     </section>
   )
 }
